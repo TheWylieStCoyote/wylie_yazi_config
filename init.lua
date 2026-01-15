@@ -14,3 +14,8 @@ th.git.deleted_sign = "D "
 th.git.updated_sign = "U "
 
 require("git"):setup()
+
+require("copy-file-contents"):setup({
+	append_char = "\n",
+	notification = true,
+})
