@@ -27,3 +27,8 @@ desc = "Diff the selected with the hovered file"
 on   = "<A-y>"
 run  = "plugin copy-file-contents"
 desc = "Copy contents of file"
+
+[[mgr.prepend_keymap]]
+on   = ["g", "i"]
+run  = "plugin lazygit"
+desc = "Open lazygit"
