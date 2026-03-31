@@ -13,6 +13,7 @@ th.git.ignored_sign = "I "
 th.git.deleted_sign = "D "
 th.git.updated_sign = "U "
 
+require("full-border"):setup()
 require("git"):setup()
 
 require("copy-file-contents"):setup({
