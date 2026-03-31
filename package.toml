@@ -48,5 +48,10 @@ use = "yazi-rs/plugins:bookmarks"
 rev = "1962818"
 hash = "99aa06d3014798d86001c324468d497f"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-filter"
+rev = "1962818"
+hash = "c887903a63a2ff520081b6d90a4b3392"
+
 [flavor]
 deps = []
