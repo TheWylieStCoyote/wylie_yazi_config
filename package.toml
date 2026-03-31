@@ -48,5 +48,10 @@ use = "yazi-rs/plugins:bookmarks"
 rev = "1962818"
 hash = "99aa06d3014798d86001c324468d497f"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:mime-ext"
+rev = "1962818"
+hash = "8b177921e50732b2c8e9d71aa5956270"
+
 [flavor]
 deps = []
