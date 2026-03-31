@@ -8,6 +8,25 @@ show_symlink   = true
 max_width  = 1920
 max_height = 1080
 
+[opener]
+edit = [
+  { run = '$EDITOR "$@"', block = true, desc = "$EDITOR" },
+]
+open = [
+  { run = 'xdg-open "$@"', desc = "Open" },
+]
+
+[open]
+rules = [
+  { name = "*/", use = ["edit", "open"] },
+  { mime = "text/*", use = ["edit", "open"] },
+  { mime = "image/*", use = ["open"] },
+  { mime = "video/*", use = ["open"] },
+  { mime = "audio/*", use = ["open"] },
+  { mime = "application/pdf", use = ["open"] },
+  { mime = "*", use = ["open", "edit"] },
+]
+
 [[plugin.prepend_fetchers]]
 id  = "git"
 url = "*"
