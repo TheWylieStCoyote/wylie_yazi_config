@@ -33,5 +33,20 @@ use = "Lil-Dank/lazygit"
 rev = "0e56060"
 hash = "ab2e66065a94cca4886b303518e44bd8"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:max-preview"
+rev = "1962818"
+hash = "99aa06d3014798d86001c324468d497f"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:jump-to-char"
+rev = "1962818"
+hash = "7a4b4237223aaa94e589d1c01a23542a"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:bookmarks"
+rev = "1962818"
+hash = "99aa06d3014798d86001c324468d497f"
+
 [flavor]
 deps = []

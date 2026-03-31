@@ -32,3 +32,23 @@ desc = "Copy contents of file"
 on   = ["g", "i"]
 run  = "plugin lazygit"
 desc = "Open lazygit"
+
+[[mgr.prepend_keymap]]
+on   = "T"
+run  = "plugin max-preview"
+desc = "Toggle full-screen preview"
+
+[[mgr.prepend_keymap]]
+on   = "f"
+run  = "plugin jump-to-char"
+desc = "Jump to file starting with typed character"
+
+[[mgr.prepend_keymap]]
+on   = ["m", "a"]
+run  = "plugin bookmarks --args=save"
+desc = "Save current directory as bookmark"
+
+[[mgr.prepend_keymap]]
+on   = "'"
+run  = "plugin bookmarks --args=jump"
+desc = "Jump to a saved bookmark"
