@@ -4,6 +4,10 @@ sort_dir_first = true
 sort_sensitive = false
 show_symlink   = true
 
+[tasks]
+micro_workers = 10
+macro_workers = 5
+
 [preview]
 max_width  = 1920
 max_height = 1080
