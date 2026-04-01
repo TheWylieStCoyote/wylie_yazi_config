@@ -52,3 +52,8 @@ desc = "Save current directory as bookmark"
 on   = "'"
 run  = "plugin bookmarks --args=jump"
 desc = "Jump to a saved bookmark"
+
+[[mgr.prepend_keymap]]
+on   = "F"
+run  = "plugin smart-filter"
+desc = "Smart filter (persists when navigating into subdirectories)"
