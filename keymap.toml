@@ -57,6 +57,8 @@ desc = "Jump to a saved bookmark"
 on   = "F"
 run  = "plugin smart-filter"
 desc = "Smart filter (persists when navigating into subdirectories)"
+
+[[mgr.prepend_keymap]]
 on   = ["M", "s"]
 run  = "linemode size"
 desc = "Linemode: size"
