@@ -63,5 +63,10 @@ use = "yazi-rs/plugins:mime-ext"
 rev = "1962818"
 hash = "8b177921e50732b2c8e9d71aa5956270"
 
+[[plugin.deps]]
+use = "GianniBYoung/rsync"
+rev = "44f6979"
+hash = "9e85283824277bf66011a3977d266edb"
+
 [flavor]
 deps = []

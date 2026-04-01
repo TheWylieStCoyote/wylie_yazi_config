@@ -34,6 +34,11 @@ run  = "plugin lazygit"
 desc = "Open lazygit"
 
 [[mgr.prepend_keymap]]
+on   = "R"
+run  = "plugin rsync -- --remember"
+desc = "Copy files using rsync (remembers last target)"
+
+[[mgr.prepend_keymap]]
 on   = "T"
 run  = "plugin max-preview"
 desc = "Toggle full-screen preview"
