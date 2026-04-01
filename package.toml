@@ -55,6 +55,9 @@ hash = "6fa6a05a81c98dd000fbca3cca6e9682"
 use = "yazi-rs/plugins:smart-filter"
 rev = "1962818"
 hash = "c887903a63a2ff520081b6d90a4b3392"
+use = "yazi-rs/plugins:mime-ext"
+rev = "1962818"
+hash = "8b177921e50732b2c8e9d71aa5956270"
 
 [flavor]
 deps = []
