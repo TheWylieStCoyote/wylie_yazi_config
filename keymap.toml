@@ -57,3 +57,16 @@ desc = "Jump to a saved bookmark"
 on   = "F"
 run  = "plugin smart-filter"
 desc = "Smart filter (persists when navigating into subdirectories)"
+on   = ["M", "s"]
+run  = "linemode size"
+desc = "Linemode: size"
+
+[[mgr.prepend_keymap]]
+on   = ["M", "m"]
+run  = "linemode mtime"
+desc = "Linemode: modified time"
+
+[[mgr.prepend_keymap]]
+on   = ["M", "p"]
+run  = "linemode permissions"
+desc = "Linemode: permissions"
