@@ -22,7 +22,7 @@ open = [
 
 [open]
 rules = [
-  { name = "*/", use = ["edit", "open"] },
+  { url = "*/", use = ["edit", "open"] },
   { mime = "text/*", use = ["edit", "open"] },
   { mime = "image/*", use = ["open"] },
   { mime = "video/*", use = ["open"] },
@@ -32,27 +32,31 @@ rules = [
 ]
 
 [[plugin.prepend_fetchers]]
-id   = "mime"
-url  = "local://*"
-run  = "mime-ext.local"
-prio = "high"
+id    = "mime"
+url   = "local://*"
+run   = "mime-ext.local"
+prio  = "high"
+group = "mime"
 
 [[plugin.prepend_fetchers]]
-id   = "mime"
-url  = "remote://*"
-run  = "mime-ext.remote"
-prio = "high"
+id    = "mime"
+url   = "remote://*"
+run   = "mime-ext.remote"
+prio  = "high"
+group = "mime"
 
 [[plugin.prepend_previewers]]
 url = "*.md"
 run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"'
 
 [[plugin.prepend_fetchers]]
-id  = "git"
-url = "*"
-run = "git"
+id    = "git"
+url   = "*"
+run   = "git"
+group = "git"
 
 [[plugin.prepend_fetchers]]
-id  = "git"
-url = "*/"
-run = "git"
+id    = "git"
+url   = "*/"
+run   = "git"
+group = "git"
